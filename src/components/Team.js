@@ -4,7 +4,7 @@ export default function Team() {
   return (
     <div className="container">
       <div className="row">
-        <h5 className="py-3">Team PakLocCorp</h5>
+        <h5 className="py-3">Team PakGenTex</h5>
         <div className="col-lg-4 col-sm-6">
           <div className="card p-2">
             <div className="px-5">

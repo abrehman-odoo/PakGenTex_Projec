@@ -21,26 +21,25 @@ export default function Bar() {
             
             <Nav className="ms-auto justify-content-center p-1 navbar">
               <strong>
-                <Nav.Link href="/" className="text-white">Corpora</Nav.Link>
+                <Nav.Link href="/" className="text-white">Home</Nav.Link>
               </strong>
               <strong>
-                <Nav.Link href="/Search" className="text-white">Guides</Nav.Link>
+                <Nav.Link href="/Search" className="text-white">Search</Nav.Link>
               </strong>
               <strong>
-                <Nav.Link href="/Search" className="text-white">Related Resources</Nav.Link>
+                <Nav.Link href="/Resource" className="text-white">Related Resources</Nav.Link>
               </strong>
               <strong>
-                <Nav.Link href="/Search" className="text-white">Users</Nav.Link>
+                <Nav.Link href="/Account" className="text-white">My Account</Nav.Link>
               </strong>
               <strong>
-                <Nav.Link href="/Search" className="text-white">My Account</Nav.Link>
-              </strong>
-              
-              <strong>
-                <Nav.Link href="/LogReg" className="text-warning">Upgrade</Nav.Link>
+                <Nav.Link href="/Help" className="text-white">Help</Nav.Link>
               </strong>
               <strong>
-                <Nav.Link href="#link" className="text-white">Help</Nav.Link>
+                <Nav.Link href="/Login" className="text-white">Login</Nav.Link>
+              </strong>
+              <strong>
+                <Nav.Link href="/Contact" className="text-white">Contact</Nav.Link>
               </strong>
             </Nav>
           </Navbar.Collapse>
