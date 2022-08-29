@@ -13,9 +13,10 @@ import Account from './pages/Account';
 import Login from './pages/Login';
 import Contact from './pages/Contact';
 import Sresult from './pages/Sresult';
-import Register from './pages/Register';
+import Register from './pages/Register'
+import Forgot from './pages/Forgot';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
   <React.StrictMode>
     <BrowserRouter>
@@ -26,6 +27,7 @@ root.render(
     <Route path="/Account" element={<Account />} />
     <Route path="/Login" element={<Login/>} />
     <Route path="/Register" element={<Register/>} />
+    <Route path="/Forgot" element={<Forgot/>} />
     <Route path="/Help" element={<Help />} />
     <Route path="/Contact" element={<Contact />} />
     <Route path="/Sresult" element={<Sresult />} />

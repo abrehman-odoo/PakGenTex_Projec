@@ -30,22 +30,6 @@ export default function Login() {
                 </div>
                 <div className="row mb-4">
                   <div className="col-md-6 d-flex justify-content-center">
-                    {/* <div className="form-check mb-3 mb-md-0">
-                      <input
-                        className="form-check-input"
-                        style={{
-                          backgroundColor: "#5db959",
-                          borderColor: "#5db959",
-                        }}
-                        type="checkbox"
-                        defaultValue
-                        defaultChecked
-                      />
-                      <label className="form-check-label" htmlFor="loginCheck">
-                        {" "}
-                        Remember me{" "}
-                      </label>
-                    </div> */}
                   </div>
                   <div className="col-md-6 d-flex justify-content-center">
                     <a href="/Forgot">Forgot password?</a>

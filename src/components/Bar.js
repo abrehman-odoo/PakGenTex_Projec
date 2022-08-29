@@ -29,9 +29,9 @@ export default function Bar() {
               <strong>
                 <Nav.Link href="/Resource" className="text-white">Related Resources</Nav.Link>
               </strong>
-              <strong>
+              {/* <strong>
                 <Nav.Link href="/Account" className="text-white">My Account</Nav.Link>
-              </strong>
+              </strong> */}
               <strong>
                 <Nav.Link href="/Help" className="text-white">Help</Nav.Link>
               </strong>
