@@ -94,7 +94,7 @@ export default function Resource() {
               <td>117986</td>
               <td></td>
             </tr>
-            <tr style={{ color: "red" }}>
+            <tr >
               <td>Sociology</td>
               <td>162896</td>
               <td>154786</td>
@@ -185,9 +185,9 @@ export default function Resource() {
                 </a>
               </th>
               <td></td>
-              <td style={{ color: "red" }}> 293092 +22889</td>
-              <td style={{ color: "red" }}>66939</td>
-              <td style={{ color: "red" }}>382920</td>
+              <td > 293092 +22889</td>
+              <td >66939</td>
+              <td >382920</td>
               <td></td>
             </tr>
 
@@ -298,7 +298,6 @@ export default function Resource() {
                 className="text-center"
               >
                 <span
-                  style={{ backgroundColor: "yellow" }}
                   className="p-2 px-4"
                 >
                   Total
@@ -307,7 +306,7 @@ export default function Resource() {
               <td></td>
               <td></td>
               <td></td>
-              <td style={{ backgroundColor: "yellow" }} className="px-3">
+              <td className="px-3">
                 {" "}
                 3718535
               </td>
@@ -316,6 +315,8 @@ export default function Resource() {
 
             <tr>
               <th colSpan={4} className="text-center">
+                
+
                 MPhil Research Proposal
               </th>
               <td></td>
@@ -346,7 +347,7 @@ export default function Resource() {
 
             <tr>
               <td rowSpan={5} className="text-center">
-                <br /> <br /> Arts and Humanities
+                <br /> <br /> <a href="https://drive.google.com/drive/folders/1ofUDXKVDhndpYNjbVQKeE2aMILbu0Xp6?usp=sharing">Arts and Humanities</a>
               </td>
               <th colSpan={2} className="text-center">
                 Discipline
@@ -390,7 +391,9 @@ export default function Resource() {
 
             <tr>
               <td rowSpan={3} className="text-center">
+                <a href="https://drive.google.com/drive/folders/1SMg-ZGrWaQC_wkW8LHrwfH8BGnmPpfR6?usp=sharing">
                 Engineering
+                </a>
               </td>
               <td>Civil Engineering</td>
               <td>12220</td>
@@ -416,7 +419,7 @@ export default function Resource() {
             </tr>
 
             <tr>
-              <td className="text-center">Legal Discourse</td>
+              <td className="text-center"><a href="https://drive.google.com/drive/folders/1r-yqdBJlHs38H759bXn6M4Z3GyfIYBWN?usp=sharing">Legal Discourse</a></td>
               <td>Legal Articles</td>
               <td></td>
               <td>244246</td>
@@ -425,7 +428,7 @@ export default function Resource() {
             </tr>
 
             <tr>
-              <td className="text-center">Life and Health Sciences</td>
+              <td className="text-center"><a href="https://drive.google.com/drive/folders/1mg-FQ7UcLssKqmr9g_PX59GkijBe9MTJ?usp=sharing">Life and Health Sciences</a></td>
               <td></td>
               <td>8144</td>
               <td>8806</td>
@@ -434,7 +437,7 @@ export default function Resource() {
             </tr>
 
             <tr>
-              <td className="text-center">Multiple</td>
+              <td className="text-center"><a href="https://drive.google.com/drive/folders/1bF6yfsIFYpMl-6KrNSZO1Gnvv26nFqhA?usp=sharing">Multiple</a></td>
               <td></td>
               <td>95430</td>
               <td>212905</td>
@@ -444,7 +447,8 @@ export default function Resource() {
 
             <tr>
               <td rowSpan={3} className="text-center">
-                Natural Sciences
+                <a href="https://drive.google.com/drive/folders/1XrGB4F3x8RRPzX5AYTtjgw_AOi32Sv_J?usp=sharing">Natural Sciences</a>
+                
               </td>
               <td>Biotechnology</td>
               <td>13026</td>
@@ -471,7 +475,8 @@ export default function Resource() {
 
             <tr>
               <td rowSpan={2} className="text-center">
-                Physical Sciences
+                <a href="https://drive.google.com/drive/folders/14ANeNlfPVrEhsJ5OlNls8jfbTsoshiZh?usp=sharing">Physical Sciences</a>
+                
               </td>
               <td>Chemistry</td>
               <td>25300</td>
@@ -490,7 +495,10 @@ export default function Resource() {
 
             <tr>
               <td rowSpan={4} className="text-center">
+                <a href="https://drive.google.com/drive/folders/17f9zhGPwsZ9OFP_9z40ona8BzyfWhWst?usp=sharing">
+
                 Social Sciences
+                </a>
               </td>
               <td>Education</td>
               <td>24391</td>
@@ -534,7 +542,10 @@ export default function Resource() {
             </tr>
 
             <tr>
-              <th colSpan={3}>Novels</th>
+              <th colSpan={3}>
+                <a href="Novels">
+                Novels
+                  </a></th>
               <td>233558</td>
               <td>743049+158252 +298989+</td>
               <th>1433848</th>
@@ -552,7 +563,7 @@ export default function Resource() {
             </tr>
 
             <tr>
-              <td colSpan={3}>Pakistani Textbooks</td>
+              <td colSpan={3}><a href="https://drive.google.com/drive/folders/1jIpHWseWuVf-KRslw2pJzHaxIqj-Yw_k?usp=sharing">Pakistani Textbooks</a></td>
               <td>197986</td>
               <td></td>
               <th>197986</th>
@@ -582,11 +593,12 @@ export default function Resource() {
             </tr>
 
             <tr>
-              <th colSpan={6}>Book Reviews</th>
+              <th colSpan={6}><a href="
+https://drive.google.com/drive/folders/1zHpBAl80LFWsmWBV3MrwACkOcFpJLgUe?usp=sharing">Book Reviews</a></th>
             </tr>
 
             <tr>
-              <td colSpan={2}>Newspapers</td>
+              <td colSpan={2}><a href="https://drive.google.com/drive/folders/1W9HS2Te32jKP4Xagg58DtvAkVGyA87YC?usp=sharing">Newspapers</a></td>
               <td>DAWN, The Express Tribune, The Nation</td>
               <td> 11413 +24268</td>
               <td> 47939 36677+</td>
@@ -599,11 +611,11 @@ export default function Resource() {
             </tr>
 
             <tr>
-              <th colSpan={6}>Newspaper Articles</th>
+              <th colSpan={6}><a href="https://drive.google.com/drive/folders/1W9HS2Te32jKP4Xagg58DtvAkVGyA87YC?usp=sharing">Newspaper Articles</a></th>
             </tr>
 
             <tr>
-              <td colSpan={2}>Business News Articles</td>
+              <td colSpan={2}><a href="https://drive.google.com/drive/folders/18X1sVtf4gmpPSXTbTW0caJSJgEJ1RRVU?usp=sharing">Business News Articles</a></td>
               <td>DAWN, The Express Tribune, The Nation</td>
               <td>66772+53654+251868</td>
               <td>5608+11884</td>
@@ -611,7 +623,7 @@ export default function Resource() {
             </tr>
 
             <tr>
-              <td colSpan={2}>Corruption & Economy</td>
+              <td colSpan={2}><a href="https://drive.google.com/drive/folders/1xCcwZOTJo2y5-pDYGPr41eZJ3WrbNCVy?usp=sharing">Corruption & Economy</a></td>
               <td>DAWN</td>
               <td>35622</td>
               <td></td>
@@ -619,10 +631,13 @@ export default function Resource() {
             </tr>
 
             <tr>
-              <td colSpan={2} style={{ backgroundColor: "yellow" }}>
+              <td colSpan={2}>
+                <a href="https://drive.google.com/drive/folders/1Egr_yLhkwdVxjw-Gq4OL2YGIXC6Jw4fN?usp=sharing">
+                
                 National News
+                </a>
               </td>
-              <td style={{ backgroundColor: "yellow" }}>
+              <td>
                 DAWN, The Express Tribune
               </td>
               <td>164263</td>
@@ -631,10 +646,13 @@ export default function Resource() {
             </tr>
 
             <tr>
-              <td colSpan={2} style={{ backgroundColor: "yellow" }}>
+              <td colSpan={2} >
+                <a href="https://drive.google.com/drive/folders/1Egr_yLhkwdVxjw-Gq4OL2YGIXC6Jw4fN?usp=sharing">
+
                 International News
+                </a>
               </td>
-              <td style={{ backgroundColor: "yellow" }}>
+              <td>
                 DAWN, The Express Tribune
               </td>
               <td></td>
@@ -643,7 +661,7 @@ export default function Resource() {
             </tr>
 
             <tr>
-              <td colSpan={2}>COVID 19</td>
+              <td colSpan={2}><a href="https://drive.google.com/drive/folders/1AThdHlXXEySWQ89qMdHebbxw90XaBj7C?usp=sharing">COVID 19</a></td>
               <td>DAWN, Express, The News</td>
               <td>26500+23597 +46549+</td>
               <td>11854+1470 +5229</td>
@@ -651,7 +669,10 @@ export default function Resource() {
             </tr>
 
             <tr>
-              <td colSpan={2}>Noor Mukaddam Case</td>
+              <td colSpan={2}>
+                <a href="https://drive.google.com/drive/folders/1bQM_SVXSNF2gbYbJ8LNgEf8MT8RoBoSE?usp=sharing">Noor Mukaddam Case</a>
+                
+                </td>
               <td>DAWN</td>
               <td>44828</td>
               <td>4163</td>
@@ -659,7 +680,7 @@ export default function Resource() {
             </tr>
 
             <tr>
-              <td colSpan={2}>Arts & Culture</td>
+              <td colSpan={2}><a href="https://drive.google.com/drive/folders/1Fur3VQvD51bF2zc9V-E04WDXsxwrEokF?usp=sharing">Arts & Culture</a></td>
               <td>DAWN</td>
               <td>20965</td>
               <td>45991</td>
@@ -678,7 +699,7 @@ export default function Resource() {
             </tr>
 
             <tr>
-              <td colSpan={2}>Entertainment</td>
+              <td colSpan={2}><a href="https://drive.google.com/drive/folders/1nAcGhvabj-tPkON00WWOQDKQWcodhW3A?usp=sharing">Entertainment</a></td>
               <td>DAWN, The News</td>
               <td>17423+109681</td>
               <td>15725+188203</td>
@@ -697,7 +718,7 @@ export default function Resource() {
             </tr>
 
             <tr>
-              <td colSpan={2}>Opinion Articles</td>
+              <td colSpan={2}><a href="https://drive.google.com/drive/folders/1FRU_YiAs92a8XeHyOjYnHFzBC1xhmUFO?usp=sharing">Opinion Articles</a></td>
               <td>DAWN, The Nation, The News</td>
               <td>229323+ 282572+ 321424</td>
               <td>37939+7755 +6652</td>
@@ -711,7 +732,8 @@ export default function Resource() {
             </tr>
 
             <tr>
-              <td colSpan={2}>Transgender</td>
+              <td colSpan={2}><a href="https://drive.google.com/drive/folders/1frMqQyJmQpieyGo6hYD7TdL13TL9Qikv?usp=sharing">
+              Transgender</a></td>
               <td>The Express Tribune</td>
               <td>15337</td>
               <td>18131</td>
@@ -719,7 +741,7 @@ export default function Resource() {
             </tr>
 
             <tr>
-              <td colSpan={2}>Aurat March</td>
+              <td colSpan={2}><a href="https://drive.google.com/drive/folders/1RsL-n3kVF42HuIA6yiwOIJXQZtUOWLVS?usp=sharing">Aurat March</a></td>
               <td>Dailytimes, Dunya News</td>
               <td>10908+6468+594+ 1887+1959</td>
               <td>9153+2715+ 5541+897</td>
@@ -727,7 +749,7 @@ export default function Resource() {
             </tr>
 
             <tr>
-              <td colSpan={2}>Health Care</td>
+              <td colSpan={2}><a href="https://drive.google.com/drive/folders/1RVhjvZ_VZA97rN2xmuYjxMkzOiGwpkhW?usp=sharing">Health Care</a></td>
               <td>The Nation, Dunya News, Tribune Blogs</td>
               <td>4820+1099+873+ 16032+</td>
               <td>3636+1264+ 10124+</td>
@@ -735,7 +757,7 @@ export default function Resource() {
             </tr>
 
             <tr>
-              <td colSpan={2}>COVID-19</td>
+              <td colSpan={2}><a href="https://drive.google.com/drive/folders/1AThdHlXXEySWQ89qMdHebbxw90XaBj7C?usp=sharing">COVID-19</a></td>
               <td>Dailytimes, Dunya News, Tribune Blogs, </td>
               <td>30207+7321+5652+ 14768+2466</td>
               <td>19336+5502+ 5791+6127+ 2416</td>
@@ -743,15 +765,7 @@ export default function Resource() {
             </tr>
 
             <tr>
-              <td colSpan={2}>Arts & Culture</td>
-              <td>DAWN</td>
-              <td>20965</td>
-              <td>45991</td>
-              <td>66956</td>
-            </tr>
-
-            <tr>
-              <td colSpan={2}>Arts & Culture</td>
+              <td colSpan={2}><a href="https://drive.google.com/drive/folders/1FHG-LjBYbrJudJJODjSrtEN2US0cnn3d?usp=sharing">Arts & Culture</a></td>
               <td>DAWN</td>
               <td>20965</td>
               <td>45991</td>
@@ -821,7 +835,7 @@ export default function Resource() {
               </tr>
 
               <tr>
-                <td colSpan={2}>Synopsis Defense Presentations</td>
+                <td colSpan={2}><a href="https://drive.google.com/drive/folders/1Fur3VQvD51bF2zc9V-E04WDXsxwrEokF?usp=sharing">Synopsis Defense Presentations</a></td>
                 <td>Arts and humanities</td>
                 <td>13419</td>
                 <td>14274</td>
@@ -835,7 +849,7 @@ export default function Resource() {
               </tr>
 
               <tr>
-                <td colSpan={2}>Classroom Lectures</td>
+                <td colSpan={2}><a href="https://drive.google.com/drive/folders/1VW67ng9oOhOdjZ7cq2wTaA0yiomrTjJW?usp=sharing">Classroom Lectures</a></td>
                 <td>Arts and Humanities</td>
                 <td>33714+62141</td>
                 <td>17376+83289</td>
@@ -849,7 +863,7 @@ export default function Resource() {
               </tr>
 
               <tr>
-                <td colSpan={2}>Conference Presentations</td>
+                <td colSpan={2}><a href="https://drive.google.com/drive/folders/1ja2y4AeclgfqNgh_TH15YRO1wyLah9L1?usp=sharing">Conference Presentations</a></td>
                 <td></td>
                 <td>18897</td>
                 <td>15199</td>
@@ -863,7 +877,11 @@ export default function Resource() {
               </tr>
 
               <tr>
-                <td colSpan={2}>Motivational Speeches</td>
+                <td colSpan={2}>
+                  <a href="https://drive.google.com/drive/folders/1MJKiKno5dfxr-RZZjaEn6IB0EXjuBiev?usp=sharing">
+                  Motivational Speeches
+                  </a>
+                  </td>
                 <td></td>
                 <td>37976</td>
                 <td>33286</td>
