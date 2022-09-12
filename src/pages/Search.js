@@ -113,11 +113,13 @@ export default function Search() {
               {showCat1 === true && <div className="d-flex justify-content-center">
                 <h5 className="pb-2 py-1">Select Category</h5>
               </div>}
-              {showCat1 == true && <div className="d-flex justify-content-center pb-4">
+              <div className=' container row d-flex col-md-12 col-sm-12'>
+                <div className='col-sm-4 col-md-4'>
+              {showCat1 == true && <div className="d-flex justify-content-center pb-4 ">
                 <Scrollbars
                   style={{
                     height: "170px",
-                    width: "280px",
+                    width: "200px",
                     paddingLeft: "19px"
                   }}
                   className="bg-white border border-2 border-black"
@@ -154,16 +156,17 @@ export default function Search() {
                   })}
                 </Scrollbars>
               </div>}
+              </div>
 
-
+<div className='col-sm-4 col-md-4'>
               {showCat2 === true && <div className="d-flex justify-content-center">
                 <h5 className="pb-2 py-1">{selectedCategory}</h5>
               </div>}
-              {showCat2 === true && <div className="d-flex justify-content-center pb-4">
+              {showCat2 === true && <div className="d-flex justify-content-center pb-4 ">
                 <Scrollbars
                   style={{
                     height: "170px",
-                    width: "280px",
+                    width: "200px",
                     paddingLeft: "19px"
                   }}
                   className="bg-white border border-2 border-black"
@@ -195,8 +198,9 @@ export default function Search() {
                   })}
                 </Scrollbars>
               </div>}
+              </div>
 
-
+<div className='col-sm-4 col-md-4'>
               {showCat3 === true && <div className="d-flex justify-content-center">
                 <h5 className="pb-2 py-1">{selectedCat2}</h5>
               </div>}
@@ -204,7 +208,7 @@ export default function Search() {
                 <Scrollbars
                   style={{
                     height: "170px",
-                    width: "280px",
+                    width: "200px",
                     paddingLeft: "19px"
                   }}
                   className="bg-white border border-2 border-black"
@@ -230,6 +234,7 @@ export default function Search() {
                   })}
                 </Scrollbars>
               </div>}
+              </div>
 
 
 
@@ -254,6 +259,7 @@ export default function Search() {
                   })}
                 </Scrollbars>
               </div>}
+              </div>
             </div>
           </div>
         </div>
