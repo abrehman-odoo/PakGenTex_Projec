@@ -24,6 +24,9 @@ export default function Bar() {
                 <Nav.Link href="/" className="text-white">Home</Nav.Link>
               </strong>
               <strong>
+                <Nav.Link href="/AboutUs" className="text-white">About Us</Nav.Link>
+              </strong>
+              <strong>
                 <Nav.Link href="/Search" className="text-white">Search</Nav.Link>
               </strong>
               <strong>

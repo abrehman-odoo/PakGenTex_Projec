@@ -64,7 +64,7 @@ export default function footer() {
       style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
     >
       Last Updated On :
-      <h2>05 July 2022</h2>
+      <h2>2 Oct 2022</h2>
     </div>
   </footer>
   </div>

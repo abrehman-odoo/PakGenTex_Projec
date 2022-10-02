@@ -42,26 +42,23 @@ export default function Search() {
   let navigation = useNavigate();
   const Searchword = async (e) => {
     // setIsLoading(true)
-    var myHeaders = new Headers();
-    myHeaders.append("Content-Type", "application/json");
-
-    var raw = JSON.stringify({
-      word: Word,
-      criteria: "Academic",
-    });
-
-    var requestOptions = {
-      method: "POST",
-      headers: myHeaders,
-      body: raw,
-      redirect: "follow",
-    };
     navigation("/Sresult", {
       state: {
         Word: Word,
         criteria: criteria !== "" ? criteria : "Academics",
       },
     });
+  };
+  const SearchConcordance = async (e) => {
+    // setIsLoading(true)
+    if(Word!==''){
+      navigation("/Concordance", {
+        state: {
+          Word: Word,
+          criteria: criteria !== "" ? criteria : "Academics",
+        },
+      });
+    }
   };
   const handleCatSelection = (
     cat1 = selectedCategory,
@@ -114,18 +111,45 @@ export default function Search() {
 
           <div className="col-md-6 col-sm-6 p-5">
             <div className="pt-3">
-              <div className="d-flex">
                 <input
                   placeholder="Find Word"
                   className="m-1 rounded border w-75"
                   onChange={(e) => setWord(e.target.value)}
                 />
+              <div className="d-flex">
                 <button
                   className="p-1 px-5 rounded border text-white"
                   style={{ backgroundColor: "#c40404" }}
                   onClick={Searchword}
                 >
                   <i class="fa fa-search"></i>
+                </button>
+                <button
+                  className="p-1 px-5 rounded border text-white"
+                  style={{ backgroundColor: "darkblue",color:"white" }}
+                  onClick={SearchConcordance}
+                >
+                  Concordance
+                  {/* <i class="fa fa-search"></i> */}
+                </button>
+               
+              </div>
+              <div style={{marginTop:10}} className="d-flex">
+                <button
+                  className="p-1 px-5 rounded border text-white"
+                  style={{ backgroundColor: "green" }}
+                  onClick={Searchword}
+                >
+                  {/* <i class="fa fa-search"></i> */}
+                  KWIC
+                </button>
+                <button
+                  className="p-1 px-5 rounded border text-white"
+                  style={{ backgroundColor: "brown" }}
+                  onClick={Searchword}
+                >
+                  {/* <i class="fa fa-search"></i> */}
+                  Frequency
                 </button>
               </div>
               {showCat1 === true && (
