@@ -18,28 +18,30 @@ import Forgot from './pages/Forgot';
 import About from './pages/About';
 import AboutUs from './pages/AboutUs';
 import Concordance from './pages/Concordance';
+import Frequency from './pages/Frequency';
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-    <Routes>
-    <Route path="/" element={<App />} />
-    <Route path="/Search" element={<Search />} />
-    <Route path="/Resource" element={<Resource />} />
-    <Route path="/Account" element={<Account />} />
-    <Route path="/Login" element={<Login/>} />
-    <Route path="/Concordance" element={<Concordance/>} />
-    <Route path="/Register" element={<Register/>} />
-    <Route path="/Forgot" element={<Forgot/>} />
-    <Route path="/About" element={<About/>} />
-    <Route path="/AboutUs" element={<AboutUs/>} />
-    <Route path="/Help" element={<Help />} />
-    <Route path="/Contact" element={<Contact />} />
-    <Route path="/Sresult" element={<Sresult />} />
-    </Routes>
+      <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="/Search" element={<Search />} />
+        <Route path="/Resource" element={<Resource />} />
+        <Route path="/Account" element={<Account />} />
+        <Route path="/Login" element={<Login />} />
+        <Route path="/Concordance" element={<Concordance />} />
+        <Route path="/Frequency" element={<Frequency />} />
+        <Route path="/Register" element={<Register />} />
+        <Route path="/Forgot" element={<Forgot />} />
+        <Route path="/About" element={<About />} />
+        <Route path="/AboutUs" element={<AboutUs />} />
+        <Route path="/Help" element={<Help />} />
+        <Route path="/Contact" element={<Contact />} />
+        <Route path="/Sresult" element={<Sresult />} />
+      </Routes>
     </BrowserRouter>
-    
+
   </React.StrictMode>
 );
 

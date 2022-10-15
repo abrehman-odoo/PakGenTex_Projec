@@ -49,6 +49,14 @@ export default function Search() {
       },
     });
   };
+  const getFrequency = async (e) => {
+    // setIsLoading(true)
+    navigation("/Frequency", {
+      state: {
+        criteria: criteria !== "" ? criteria : "Academics",
+      },
+    });
+  };
   const SearchConcordance = async (e) => {
     // setIsLoading(true)
     if(Word!==''){
@@ -146,7 +154,7 @@ export default function Search() {
                 <button
                   className="p-1 px-5 rounded border text-white"
                   style={{ backgroundColor: "brown" }}
-                  onClick={Searchword}
+                  onClick={getFrequency}
                 >
                   {/* <i class="fa fa-search"></i> */}
                   Frequency

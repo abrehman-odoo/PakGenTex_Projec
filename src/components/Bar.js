@@ -21,17 +21,17 @@ export default function Bar() {
             
             <Nav className="ms-auto justify-content-center p-1 navbar">
               <strong>
-                <Nav.Link href="/" className="text-white">Home</Nav.Link>
+                <Nav.Link href="/Search" className="text-white">Home</Nav.Link>
               </strong>
               <strong>
                 <Nav.Link href="/AboutUs" className="text-white">About Us</Nav.Link>
               </strong>
-              <strong>
+              {/* <strong>
                 <Nav.Link href="/Search" className="text-white">Search</Nav.Link>
-              </strong>
-              <strong>
+              </strong> */}
+              {/* <strong>
                 <Nav.Link href="/Resource" className="text-white">Related Resources</Nav.Link>
-              </strong>
+              </strong> */}
               {/* <strong>
                 <Nav.Link href="/Account" className="text-white">My Account</Nav.Link>
               </strong> */}

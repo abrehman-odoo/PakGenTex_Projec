@@ -108,7 +108,21 @@ export default function Concordance() {
                                         <option value="7">7</option>{" "}
                                         <option value="8">8</option>{" "}
                                         <option value="9">9</option>{" "}
-                                        <option value="10">10</option>{" "}
+                                        <option value="10">11</option>{" "}
+                                        <option value="12">12</option>{" "}
+                                        <option value="13">13</option>{" "}
+                                        <option value="14">14</option>{" "}
+                                        <option value="15">15</option>{" "}
+                                        <option value="16">16</option>{" "}
+                                        <option value="17">17</option>{" "}
+                                        <option value="18">18</option>{" "}
+                                        <option value="19">19</option>{" "}
+                                        <option value="20">20</option>{" "}
+                                        <option value="21">21</option>{" "}
+                                        <option value="22">22</option>{" "}
+                                        <option value="23">23</option>{" "}
+                                        <option value="24">24</option>{" "}
+                                        <option value="25">25</option>{" "}
                                     </select>
                                 </div>
                                 <div>
@@ -132,7 +146,21 @@ export default function Concordance() {
                                         <option value="7">7</option>{" "}
                                         <option value="8">8</option>{" "}
                                         <option value="9">9</option>{" "}
-                                        <option value="10">10</option>{" "}
+                                        <option value="10">11</option>{" "}
+                                        <option value="12">12</option>{" "}
+                                        <option value="13">13</option>{" "}
+                                        <option value="14">14</option>{" "}
+                                        <option value="15">15</option>{" "}
+                                        <option value="16">16</option>{" "}
+                                        <option value="17">17</option>{" "}
+                                        <option value="18">18</option>{" "}
+                                        <option value="19">19</option>{" "}
+                                        <option value="20">20</option>{" "}
+                                        <option value="21">21</option>{" "}
+                                        <option value="22">22</option>{" "}
+                                        <option value="23">23</option>{" "}
+                                        <option value="24">24</option>{" "}
+                                        <option value="25">25</option>{" "}
                                     </select>
                                 </div>
                                 <div>
@@ -155,7 +183,7 @@ export default function Concordance() {
                                     {showText === false && showLoader == false && <table class="table table-bordered">
                                         <thead>
                                             <tr>
-                                                <th scope="col" className='text-center'>Click (View or Download)</th>
+                                                {/* <th scope="col" className='text-center'>Click (View or Download)</th> */}
                                                 <th scope="col" className='text-center'>Context (Left)</th>
                                                 <th scope="col" className='text-center'>Context (Matched)</th>
                                                 <th scope="col" className='text-center'>Context (Right)</th>
@@ -166,7 +194,7 @@ export default function Concordance() {
 
                                             <tbody>
                                                 <tr>
-                                                    <td className="text-center"><a onClick={e => {
+                                                    {/* <td className="text-center"><a onClick={e => {
                                                         e.preventDefault()
                                                         setshowLoader(true)
                                                         console.log('item---->', item.filename)
@@ -189,7 +217,7 @@ export default function Concordance() {
                                                                     setfilepath(file.split('/')[file.split('/').length - 1])
                                                                 }
                                                             })
-                                                    }} href=''>{item.filename.split('/')[item.filename.split('/').length - 1]}</a></td>
+                                                    }} href=''>{item.filename.split('/')[item.filename.split('/').length - 1]}</a></td> */}
                                                     <td className='text-center'>{item.preText}</td>
                                                     <td className='text-danger text-center' ><strong>{WordSave}</strong></td>
                                                     <td className='text-center'>{item.postText}</td>
