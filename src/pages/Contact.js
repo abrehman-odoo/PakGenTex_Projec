@@ -84,7 +84,7 @@ export default function Contact() {
                 </li>
                 <li>
                   <i className="fa fa-envelope fa-lg mt-4 fa-2x" />
-                  <p>Fatematuzzehra@gmail.com</p>
+                  <p>pakgentex@gmail.com</p>
                 </li>
               </ul>
             </div>

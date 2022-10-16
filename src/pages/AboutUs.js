@@ -3,8 +3,17 @@ import Bar from "../components/Bar";
 import Footer from "../components/Footer";
 import Team from '../components/Team'
 import About from '../pages/About'
+import Tabs from '@mui/material/Tabs';
+import Tab from '@mui/material/Tab';
+import Typography from '@mui/material/Typography';
+import Box from '@mui/material/Box';
 
 export default function AboutUs() {
+    const [value, setValue] = React.useState('one');
+
+    const handleChange = (event, newValue) => {
+      setValue(newValue);
+    };
     return (
         <div style={{ backgroundColor: "#cccccc", height: "100%" }}>
             <div className="container" style={{ backgroundColor: "white" }}>
@@ -22,7 +31,7 @@ export default function AboutUs() {
           library that makes it simple to build modern, reactive, dynamic
           interfaces using Laravel Blade as your templating language.
         </div> */}
-                <div style={{textAlign:"justify"}} className="container">
+                <div style={{ textAlign: "justify" }} className="container">
                     <h5>Pakistan Gender Text (PakGenText)</h5>
                     <p>
                         Human language is not static and uniform; but keeps on evolving with the passage of time. In consequence, language variation gradually develops due to a number of social variables. One of the most significant social variables is gender. Gender plays a significant role in generating language variation between men and women. In Pakistan, no such corpus has been developed so far which can distinctly focus on the language used by men and women. There is a dire need to develop a corpus by employing modern methods to develop and maintain corpus. So, this research project aims to develop a corpus (PakGenText) which will not only distinguish the use of language in different genre but also focuses on gender-based language use in different genre.
@@ -35,6 +44,22 @@ export default function AboutUs() {
                         <li>Written Discourse</li>
                         <li>Spoken Discourse</li>
                     </ol>
+                    <Box sx={{ width: '100%' }}>
+                        <Tabs
+                            value={value}
+                            onChange={handleChange}
+                            textColor="secondary"
+                            indicatorColor="secondary"
+                            aria-label="secondary tabs example"
+                        >
+                            <Tab value="one" label="Written Discourse">
+                            </Tab>
+                            <Tab value="two" label="Spoken Discourse">
+                            </Tab>
+                        </Tabs>
+                    </Box>
+                    {value==='one' && <div>
+                    <br/>
                     <h5>Written Discourse</h5>
                     <p>The selected texts belong to Pakistani male or female authors and writers. Following table shows the data collected for PakGenText in the first year of the project.</p>
                     <p>Table 1: Details of Written Texts of PakGenText</p>
@@ -871,21 +896,15 @@ https://drive.google.com/drive/folders/1zHpBAl80LFWsmWBV3MrwACkOcFpJLgUe?usp=sha
                     </ol>
                     <br />
                     <p>Annotation keeps track of all the files that are part of the corpus. It also helps in locating any particular files when needed through file code. Genre based mark-up files including the annotation informs you about the progress made in developing the corpus of that genre specifically.</p>
+                        </div>}
                     <br />
+                    {value==='two' && <div>
                     <h5>Spoken Data</h5>
                     <p>Spoken data has been collected from synopsis defense presentations and classroom lectures so far. First of all the recorded (audio and visual) data was transcribed. As compared to written data, collection of spoken data for any project is quite a challenging task because the spoken language is relatively more spontaneous to grasp each and every chunk attentively. So as not to skip any word or phrase, transcription of spoken data demands a vigilant listener even at eavesdrop. The available spoken data has been transcribed and divided according to the speech event title, word count, matches and gender wise distribution of speech event.</p>
                     <p>Table 2: Spoken data collected for the project of PakGenText</p>
                     <div className="table-responsive">
                         <table className="table">
                             <thead>
-                                <tr>
-                                    <th colSpan={3} className="text-center">
-                                        Type of Text
-                                    </th>
-                                    <th colSpan={3} className="text-center">
-                                        Spoken
-                                    </th>
-                                </tr>
                                 <tr>
                                     <th colSpan={3} className="text-center">
                                         Type of Text
@@ -1094,6 +1113,7 @@ https://drive.google.com/drive/folders/1zHpBAl80LFWsmWBV3MrwACkOcFpJLgUe?usp=sha
                         <li>Translation of different languages into English was again a difficult task because there were some metaphorical phrases which cannot be translated literally by maintaining their original meaning.</li>
                         <li>Men usually have bleat and breathy sound. If male presenters lowered their voice at any place, it became hard to understand whereas female presenters have a little high-pitched voice. When female speakers lowered their volume, it was still audible. Female speakers were easier to understand as compared to male speakers at low volume.</li>
                     </ol>
+                    </div>}
                     <h5>Research Assistants</h5>
                     <ol>
                         <li>Ms. Anum Karim</li>
@@ -1130,6 +1150,8 @@ https://drive.google.com/drive/folders/1zHpBAl80LFWsmWBV3MrwACkOcFpJLgUe?usp=sha
 
                     </ol>
                 </div>
+            <br />
+                
             </div>
             <br />
             <Footer />

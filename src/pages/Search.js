@@ -3,6 +3,7 @@ import { Scrollbars } from "react-custom-scrollbars-2";
 import { useNavigate } from "react-router-dom";
 import Bar from "../components/Bar";
 import { useState } from "react";
+
 import { categories as allCategories } from "../components/Variable";
 
 export default function Search() {
@@ -43,6 +44,16 @@ export default function Search() {
   const Searchword = async (e) => {
     // setIsLoading(true)
     navigation("/Sresult", {
+      state: {
+        Word: Word,
+        criteria: criteria !== "" ? criteria : "Academics",
+      },
+    });
+  };
+
+  const searchKWIC = async (e) => {
+    // setIsLoading(true)
+    navigation("/KWIC", {
       state: {
         Word: Word,
         criteria: criteria !== "" ? criteria : "Academics",
@@ -102,16 +113,7 @@ export default function Search() {
           <div className="col-md-6 col-sm-6 p-5">
             <div className="pt-3 border border-1 p-1">
               <h6 className="p-3">
-                This research project aims to provide a corpus (PakGenText)
-                which will not only distinguish the use of language in different
-                genre but also focuses on gender based language use in different
-                genre. This corpus may also be used in various research
-                paradigms like Gender Studies, Education, Sociology, Psychology,
-                inter-Cultural Communication, Linguistics, Literature, English
-                Language Teaching etc. To meet the international criteria of
-                education and research, this project will pave its ways in
-                building positive international image of Pakistan in academic
-                discourse community and professional industry.
+              Human language is not static and uniform; but keeps on evolving with the passage of time. In consequence, language variation gradually develops due to a number of social variables. One of the most significant social variables is gender. Gender plays a significant role in generating language variation between men and women. In Pakistan, no such corpus has been developed so far which can distinctly focus on the language used by men and women. There is a dire need to develop a corpus by employing modern methods to develop and maintain corpus. So, this research project aims to develop a corpus (PakGenText) which will not only distinguish the use of language in different genre but also focuses on gender-based language use in different genre.
               </h6>
               <br />
             </div>
@@ -146,7 +148,7 @@ export default function Search() {
                 <button
                   className="p-1 px-5 rounded border text-white"
                   style={{ backgroundColor: "green" }}
-                  onClick={Searchword}
+                  onClick={searchKWIC}
                 >
                   {/* <i class="fa fa-search"></i> */}
                   KWIC

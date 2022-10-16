@@ -9,8 +9,29 @@ import { useReactToPrint } from 'react-to-print';
 
 
 import { ColorRing } from 'react-loader-spinner'
+var _ = require('lodash');
 // import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 
+const halfString = (str) => {
+    if (str.length % 2 == 0) {
+        return str.slice(0, str.length / 2);
+    }
+    return str;
+}
+const Highlighted = ({ text = '', highlight = '' }) => {
+    if (!highlight.trim()) {
+        return <span>{text}</span>
+    }
+    const regex = new RegExp(`(${_.escapeRegExp(highlight)})`, 'gi')
+    const parts = text.split(regex)
+    return (
+        <span>
+            {parts.filter(part => part).map((part, i) => (
+                regex.test(part) ? <mark key={i}>{part}</mark> : <span key={i}>{part}</span>
+            ))}...
+        </span>
+    )
+}
 export default function Concordance() {
     const location = useLocation()
     const WordSave = location.state !== null ? location.state.Word : "";
@@ -69,7 +90,7 @@ export default function Concordance() {
                         <div className="col-md-12 col-sm-12 p-5">
                             <div className="container row">
                                 &nbsp;
-                                <h3 style={{ textAlign: "center" }}>CONCORDANCE</h3>
+                                <h3 style={{ textAlign: "center" }}>KWIC</h3>
                                 <div className="float-start col-md-4 col-sm-4">
                                     <p>Word: <strong className="text-danger"> {WordSave}</strong></p>
                                     <p>Total Hits: <strong className="text-danger"> {totalHits}</strong></p>
@@ -184,10 +205,11 @@ export default function Concordance() {
                             <br />
                             <div className="pt-3 border border-2 p-2 border-danger pb-3">
                                 <br />
-                                {showLoader===false && <div style={{display:"flex",justifyContent:'flex-end'}}>
-                                        <button className='p-1 px-5 rounded border text-white' style={{backgroundColor:"darkblue",width:200}} onClick={()=>{
-                                            handlePrint()
-                                        }}>Print Results</button>
+                                {showLoader === false &&showText===false && <div style={{ display: "flex", justifyContent: 'space-between' }}>
+                                    <p style={{fontWeight:'bold',color:'red'}}>Click on highlighted text to view context</p>
+                                    <button className='p-1 px-5 rounded border text-white' style={{ backgroundColor: "darkblue", width: 200 }} onClick={() => {
+                                        handlePrint()
+                                    }}>Print Results</button>
                                 </div>}
                                 <br />
                                 <div className='table-responsive'>
@@ -231,7 +253,30 @@ export default function Concordance() {
                                                             })
                                                     }} href=''>{item.filename.split('/')[item.filename.split('/').length - 1]}</a></td> */}
                                                     <td className='text-center'>{item.preText}</td>
-                                                    <td className='text-danger text-center' ><strong>{WordSave}</strong></td>
+                                                    <td className='text-danger text-center' ><strong style={{textDecoration:'underline'}} onClick={e => {
+                                                        e.preventDefault()
+                                                        setshowLoader(true)
+                                                        // console.log('item---->', item.filename)
+                                                        let data = {
+                                                            filepath: item.filename
+                                                        }
+                                                        fetch(url + '/pakgentex/getFileText', {
+                                                            method: "POST",
+                                                            headers,
+                                                            body: JSON.stringify(data)
+                                                        }).then(res => res.json())
+                                                            .then((response) => {
+                                                                setshowLoader(false)
+                                                                // console.log('respkhifds-->', response)
+                                                                if (response.message === 'Success') {
+                                                                    // console.log('result --->', response.doc)
+                                                                    let file = response.doc.fileName
+                                                                    setfileText(response.doc.text)
+                                                                    setfilepath(file.split('/')[file.split('/').length - 1])
+                                                                    setshowText(true)
+                                                                }
+                                                            })
+                                                    }}>{WordSave}</strong></td>
                                                     <td className='text-center'>{item.postText}</td>
                                                 </tr>
                                             </tbody>
@@ -246,7 +291,8 @@ export default function Concordance() {
                                                 setshowText(false)
                                             }} style={{ color: 'blue', textDecoration: 'underline', paddingLeft: "10" }}>Go Back {"     "} </span>
                                             <p style={{ textAlign: "center", fontWeight: 'bolder', fontSize: 18 }}>{filepath}</p>
-                                            <p style={{ padding: 20, textAlign: 'justify' }}>{fileText}</p>
+                                            {/* <p style={{ padding: 20, textAlign: 'justify' }}>{fileText}</p> */}
+                                            <Highlighted text={fileText.split(' ').length>500?fileText.split(' ').slice(0,1000).join(' '):halfString(fileText)} highlight={WordSave} />
                                         </div>}
                                     {showLoader === true && <ColorRing
                                         visible={showLoader}

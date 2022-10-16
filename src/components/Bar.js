@@ -1,8 +1,17 @@
-import React from "react";
+import React,{useEffect,useState} from "react";
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 import gen from '../Assets/gen.jpeg'
+import { useNavigate } from 'react-router-dom'
 
 export default function Bar() {
+  const [isLoggedIn,setIsloggedIn] = useState(false)
+  const navigation = useNavigate();
+  useEffect(()=>{
+    let user = localStorage.getItem('corpusUserData')
+    if(user!==null){
+      setIsloggedIn(true)
+    }
+  },[])
   return (
     <div style={{backgroundColor:'#3e7bb3'}}>
       <Navbar expand="lg" className="container-fluid">
@@ -38,12 +47,25 @@ export default function Bar() {
               <strong>
                 <Nav.Link href="/Help" className="text-white">Help</Nav.Link>
               </strong>
-              <strong>
+              {isLoggedIn===false &&               <strong>
                 <Nav.Link href="/Login" className="text-white">Login</Nav.Link>
-              </strong>
+              </strong>}
               <strong>
                 <Nav.Link href="/Contact" className="text-white">Contact</Nav.Link>
               </strong>
+              {isLoggedIn===true &&   <button class="btn btn-danger btn-sm text-white"
+                    onClick={() => {
+                      localStorage.removeItem('corpusUserData')
+                      navigation('/')
+                      // console.log('windowwww--->',window.location.pathname)
+                      if(window.location.pathname==='/'){
+                        window.location.reload()
+                      }
+                    }}
+                  >
+                    LOGOUT
+                  </button>}
+
             </Nav>
           </Navbar.Collapse>
       </Navbar>

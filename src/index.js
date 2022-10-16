@@ -19,7 +19,7 @@ import About from './pages/About';
 import AboutUs from './pages/AboutUs';
 import Concordance from './pages/Concordance';
 import Frequency from './pages/Frequency';
-
+import KWIC from './pages/KWIC';
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
   <React.StrictMode>
@@ -31,6 +31,7 @@ root.render(
         <Route path="/Account" element={<Account />} />
         <Route path="/Login" element={<Login />} />
         <Route path="/Concordance" element={<Concordance />} />
+        <Route path="/KWIC" element={<KWIC />} />
         <Route path="/Frequency" element={<Frequency />} />
         <Route path="/Register" element={<Register />} />
         <Route path="/Forgot" element={<Forgot />} />
