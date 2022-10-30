@@ -115,12 +115,8 @@ export default function AboutUs() {
                                         rowSpan={5}
                                         style={{ alignItems: "center", verticalAlign: "middle" }}
                                     >
-                                        <a
-                                            href="https://firebasestorage.googleapis.com/v0/b/joiingmandarin.appspot.com/o/pakgentex%2FSocial%20Sciences.zip?alt=media&token=94b6aee9-e3d7-4be8-ad32-cd596c5106ad"
-                                            target={"_blank"}
-                                        >
                                             Social Sciences
-                                        </a>
+
                                     </th>
                                     <td></td>
                                     <th>Male</th>
@@ -167,12 +163,10 @@ export default function AboutUs() {
                                         rowSpan={2}
                                         style={{ alignItems: "center", verticalAlign: "middle" }}
                                     >
-                                        <a
-                                            href="https://firebasestorage.googleapis.com/v0/b/joiingmandarin.appspot.com/o/pakgentex%2FPhysical%20Sciences.zip?alt=media&token=21ca8542-35b5-43d7-a87d-d68623f0e29c"
-                                            target={"_blank"}
-                                        >
+
+
                                             Physical Sciences
-                                        </a>
+
                                     </th>
                                     <td>Chemistry</td>
                                     <td>11642</td>
@@ -195,12 +189,9 @@ export default function AboutUs() {
                                         rowSpan={3}
                                         style={{ alignItems: "center", verticalAlign: "middle" }}
                                     >
-                                        <a
-                                            href="https://firebasestorage.googleapis.com/v0/b/joiingmandarin.appspot.com/o/pakgentex%2FNatural%20Sciences.zip?alt=media&token=28516596-2a96-40cd-88db-5d0c62e93ac0"
-                                            target={"_blank"}
-                                        >
+
                                             Natural Sciences
-                                        </a>
+
                                     </th>
                                     <td>Biotechnology</td>
                                     <td>95567+94009</td>
@@ -231,15 +222,10 @@ export default function AboutUs() {
                                         style={{
                                             alignItems: "center",
                                             verticalAlign: "middle",
-                                            color: "red",
                                         }}
                                     >
-                                        <a
-                                            href="https://firebasestorage.googleapis.com/v0/b/joiingmandarin.appspot.com/o/pakgentex%2FLiterature.zip?alt=media&token=d40d64fd-a7a7-46b1-82e4-37dc3a1774ff"
-                                            target={"_blank"}
-                                        >
                                             Literature
-                                        </a>
+
                                     </th>
                                     <td></td>
                                     <td > 293092 +22889</td>
@@ -254,12 +240,7 @@ export default function AboutUs() {
                                         scope="row"
                                         style={{ alignItems: "center", verticalAlign: "middle" }}
                                     >
-                                        <a
-                                            href="https://firebasestorage.googleapis.com/v0/b/joiingmandarin.appspot.com/o/pakgentex%2FLinguistics.zip?alt=media&token=d7ea360c-eafb-42d7-a6b1-3252eb833975"
-                                            target={"_blank"}
-                                        >
                                             Linguistics
-                                        </a>
                                     </th>
                                     <td></td>
                                     <td> 259110</td>
@@ -274,12 +255,9 @@ export default function AboutUs() {
                                         scope="row"
                                         style={{ alignItems: "center", verticalAlign: "middle" }}
                                     >
-                                        <a
-                                            href="https://firebasestorage.googleapis.com/v0/b/joiingmandarin.appspot.com/o/pakgentex%2FLanguages.zip?alt=media&token=b1a44c2f-40d2-470e-aa89-f2c57713cb73"
-                                            target={"_blank"}
-                                        >
+
                                             Languages
-                                        </a>
+
                                     </th>
                                     <td></td>
                                     <td>208847</td>
@@ -294,12 +272,9 @@ export default function AboutUs() {
                                         scope="row"
                                         style={{ alignItems: "center", verticalAlign: "middle" }}
                                     >
-                                        <a
-                                            href="https://firebasestorage.googleapis.com/v0/b/joiingmandarin.appspot.com/o/pakgentex%2FHealth%20Sciences.zip?alt=media&token=390e275f-de50-41ad-8dc9-fbb0ec4ff69b"
-                                            target={"_blank"}
-                                        >
+
                                             Health Sciences
-                                        </a>
+
                                     </th>
                                     <td></td>
                                     <td>172113</td>
@@ -314,12 +289,7 @@ export default function AboutUs() {
                                         scope="row"
                                         style={{ alignItems: "center", verticalAlign: "middle" }}
                                     >
-                                        <a
-                                            href="https://firebasestorage.googleapis.com/v0/b/joiingmandarin.appspot.com/o/pakgentex%2FEngineering%20Technology.zip?alt=media&token=0100b5e9-db06-43d7-bcbc-7bf8a81c3bcf"
-                                            target={"_blank"}
-                                        >
                                             Engineering And Technology
-                                        </a>
                                     </th>
                                     <td></td>
                                     <td> 369500</td>
@@ -334,12 +304,7 @@ export default function AboutUs() {
                                         scope="row"
                                         style={{ alignItems: "center", verticalAlign: "middle" }}
                                     >
-                                        <a
-                                            href="https://firebasestorage.googleapis.com/v0/b/joiingmandarin.appspot.com/o/pakgentex%2FEnglish%20Language%20Teaching.zip?alt=media&token=77884648-fed5-4280-8382-dae58d3f296f"
-                                            target={"_blank"}
-                                        >
                                             English Language Teaching
-                                        </a>
                                     </th>
                                     <td></td>
                                     <td>185248</td>
@@ -404,7 +369,7 @@ export default function AboutUs() {
 
                                 <tr>
                                     <td rowSpan={5} className="text-center">
-                                        <br /> <br /> <a href="https://drive.google.com/drive/folders/1ofUDXKVDhndpYNjbVQKeE2aMILbu0Xp6?usp=sharing">Arts and Humanities</a>
+                                        <br /> <br /> Arts and Humanities
                                     </td>
                                     <th colSpan={2} className="text-center">
                                         Discipline
@@ -448,9 +413,9 @@ export default function AboutUs() {
 
                                 <tr>
                                     <td rowSpan={3} className="text-center">
-                                        <a href="https://drive.google.com/drive/folders/1SMg-ZGrWaQC_wkW8LHrwfH8BGnmPpfR6?usp=sharing">
+
                                             Engineering
-                                        </a>
+
                                     </td>
                                     <td>Civil Engineering</td>
                                     <td>12220</td>
@@ -476,7 +441,7 @@ export default function AboutUs() {
                                 </tr>
 
                                 <tr>
-                                    <td className="text-center"><a href="https://drive.google.com/drive/folders/1r-yqdBJlHs38H759bXn6M4Z3GyfIYBWN?usp=sharing">Legal Discourse</a></td>
+                                    <td className="text-center">Legal Discourse</td>
                                     <td>Legal Articles</td>
                                     <td></td>
                                     <td>244246</td>
@@ -485,7 +450,7 @@ export default function AboutUs() {
                                 </tr>
 
                                 <tr>
-                                    <td className="text-center"><a href="https://drive.google.com/drive/folders/1mg-FQ7UcLssKqmr9g_PX59GkijBe9MTJ?usp=sharing">Life and Health Sciences</a></td>
+                                    <td className="text-center">Life and Health Sciences</td>
                                     <td></td>
                                     <td>8144</td>
                                     <td>8806</td>
@@ -494,7 +459,7 @@ export default function AboutUs() {
                                 </tr>
 
                                 <tr>
-                                    <td className="text-center"><a href="https://drive.google.com/drive/folders/1bF6yfsIFYpMl-6KrNSZO1Gnvv26nFqhA?usp=sharing">Multiple</a></td>
+                                    <td className="text-center">Multiple</td>
                                     <td></td>
                                     <td>95430</td>
                                     <td>212905</td>
@@ -504,7 +469,7 @@ export default function AboutUs() {
 
                                 <tr>
                                     <td rowSpan={3} className="text-center">
-                                        <a href="https://drive.google.com/drive/folders/1XrGB4F3x8RRPzX5AYTtjgw_AOi32Sv_J?usp=sharing">Natural Sciences</a>
+                                        Natural Sciences
 
                                     </td>
                                     <td>Biotechnology</td>
@@ -532,7 +497,7 @@ export default function AboutUs() {
 
                                 <tr>
                                     <td rowSpan={2} className="text-center">
-                                        <a href="https://drive.google.com/drive/folders/14ANeNlfPVrEhsJ5OlNls8jfbTsoshiZh?usp=sharing">Physical Sciences</a>
+                                        Physical Sciences
 
                                     </td>
                                     <td>Chemistry</td>
@@ -552,10 +517,9 @@ export default function AboutUs() {
 
                                 <tr>
                                     <td rowSpan={4} className="text-center">
-                                        <a href="https://drive.google.com/drive/folders/17f9zhGPwsZ9OFP_9z40ona8BzyfWhWst?usp=sharing">
 
                                             Social Sciences
-                                        </a>
+
                                     </td>
                                     <td>Education</td>
                                     <td>24391</td>
@@ -600,9 +564,7 @@ export default function AboutUs() {
 
                                 <tr>
                                     <th colSpan={3}>
-                                        <a href="Novels">
-                                            Novels
-                                        </a></th>
+                                            Novels</th>
                                     <td>233558</td>
                                     <td>743049+158252 +298989+</td>
                                     <th>1433848</th>
@@ -620,7 +582,7 @@ export default function AboutUs() {
                                 </tr>
 
                                 <tr>
-                                    <td colSpan={3}><a href="https://drive.google.com/drive/folders/1jIpHWseWuVf-KRslw2pJzHaxIqj-Yw_k?usp=sharing">Pakistani Textbooks</a></td>
+                                    <td colSpan={3}>Pakistani Textbooks</td>
                                     <td>197986</td>
                                     <td></td>
                                     <th>197986</th>
@@ -650,12 +612,11 @@ export default function AboutUs() {
                                 </tr>
 
                                 <tr>
-                                    <th colSpan={6}><a href="
-https://drive.google.com/drive/folders/1zHpBAl80LFWsmWBV3MrwACkOcFpJLgUe?usp=sharing">Book Reviews</a></th>
+                                    <th colSpan={6}>Book Reviews</th>
                                 </tr>
 
                                 <tr>
-                                    <td colSpan={2}><a href="https://drive.google.com/drive/folders/1W9HS2Te32jKP4Xagg58DtvAkVGyA87YC?usp=sharing">Newspapers</a></td>
+                                    <td colSpan={2}>Newspapers</td>
                                     <td>DAWN, The Express Tribune, The Nation</td>
                                     <td> 11413 +24268</td>
                                     <td> 47939 36677+</td>
@@ -668,11 +629,11 @@ https://drive.google.com/drive/folders/1zHpBAl80LFWsmWBV3MrwACkOcFpJLgUe?usp=sha
                                 </tr>
 
                                 <tr>
-                                    <th colSpan={6}><a href="https://drive.google.com/drive/folders/1W9HS2Te32jKP4Xagg58DtvAkVGyA87YC?usp=sharing">Newspaper Articles</a></th>
+                                    <th colSpan={6}>Newspaper Articles</th>
                                 </tr>
 
                                 <tr>
-                                    <td colSpan={2}><a href="https://drive.google.com/drive/folders/18X1sVtf4gmpPSXTbTW0caJSJgEJ1RRVU?usp=sharing">Business News Articles</a></td>
+                                    <td colSpan={2}>Business News Articles</td>
                                     <td>DAWN, The Express Tribune, The Nation</td>
                                     <td>66772+53654+251868</td>
                                     <td>5608+11884</td>
@@ -680,7 +641,7 @@ https://drive.google.com/drive/folders/1zHpBAl80LFWsmWBV3MrwACkOcFpJLgUe?usp=sha
                                 </tr>
 
                                 <tr>
-                                    <td colSpan={2}><a href="https://drive.google.com/drive/folders/1xCcwZOTJo2y5-pDYGPr41eZJ3WrbNCVy?usp=sharing">Corruption & Economy</a></td>
+                                    <td colSpan={2}>Corruption & Economy</td>
                                     <td>DAWN</td>
                                     <td>35622</td>
                                     <td></td>
@@ -689,10 +650,9 @@ https://drive.google.com/drive/folders/1zHpBAl80LFWsmWBV3MrwACkOcFpJLgUe?usp=sha
 
                                 <tr>
                                     <td colSpan={2}>
-                                        <a href="https://drive.google.com/drive/folders/1Egr_yLhkwdVxjw-Gq4OL2YGIXC6Jw4fN?usp=sharing">
 
                                             National News
-                                        </a>
+
                                     </td>
                                     <td>
                                         DAWN, The Express Tribune
@@ -704,10 +664,10 @@ https://drive.google.com/drive/folders/1zHpBAl80LFWsmWBV3MrwACkOcFpJLgUe?usp=sha
 
                                 <tr>
                                     <td colSpan={2} >
-                                        <a href="https://drive.google.com/drive/folders/1Egr_yLhkwdVxjw-Gq4OL2YGIXC6Jw4fN?usp=sharing">
+
 
                                             International News
-                                        </a>
+
                                     </td>
                                     <td>
                                         DAWN, The Express Tribune
@@ -718,7 +678,8 @@ https://drive.google.com/drive/folders/1zHpBAl80LFWsmWBV3MrwACkOcFpJLgUe?usp=sha
                                 </tr>
 
                                 <tr>
-                                    <td colSpan={2}><a href="https://drive.google.com/drive/folders/1AThdHlXXEySWQ89qMdHebbxw90XaBj7C?usp=sharing">COVID 19</a></td>
+                                    <td colSpan={2}>
+                                        COVID 19</td>
                                     <td>DAWN, Express, The News</td>
                                     <td>26500+23597 +46549+</td>
                                     <td>11854+1470 +5229</td>
@@ -727,7 +688,7 @@ https://drive.google.com/drive/folders/1zHpBAl80LFWsmWBV3MrwACkOcFpJLgUe?usp=sha
 
                                 <tr>
                                     <td colSpan={2}>
-                                        <a href="https://drive.google.com/drive/folders/1bQM_SVXSNF2gbYbJ8LNgEf8MT8RoBoSE?usp=sharing">Noor Mukaddam Case</a>
+                                        Noor Mukaddam Case
 
                                     </td>
                                     <td>DAWN</td>
@@ -737,7 +698,7 @@ https://drive.google.com/drive/folders/1zHpBAl80LFWsmWBV3MrwACkOcFpJLgUe?usp=sha
                                 </tr>
 
                                 <tr>
-                                    <td colSpan={2}><a href="https://drive.google.com/drive/folders/1Fur3VQvD51bF2zc9V-E04WDXsxwrEokF?usp=sharing">Arts & Culture</a></td>
+                                    <td colSpan={2}>Arts & Culture</td>
                                     <td>DAWN</td>
                                     <td>20965</td>
                                     <td>45991</td>
@@ -756,7 +717,7 @@ https://drive.google.com/drive/folders/1zHpBAl80LFWsmWBV3MrwACkOcFpJLgUe?usp=sha
                                 </tr>
 
                                 <tr>
-                                    <td colSpan={2}><a href="https://drive.google.com/drive/folders/1nAcGhvabj-tPkON00WWOQDKQWcodhW3A?usp=sharing">Entertainment</a></td>
+                                    <td colSpan={2}>Entertainment</td>
                                     <td>DAWN, The News</td>
                                     <td>17423+109681</td>
                                     <td>15725+188203</td>
@@ -775,7 +736,7 @@ https://drive.google.com/drive/folders/1zHpBAl80LFWsmWBV3MrwACkOcFpJLgUe?usp=sha
                                 </tr>
 
                                 <tr>
-                                    <td colSpan={2}><a href="https://drive.google.com/drive/folders/1FRU_YiAs92a8XeHyOjYnHFzBC1xhmUFO?usp=sharing">Opinion Articles</a></td>
+                                    <td colSpan={2}>Opinion Articles</td>
                                     <td>DAWN, The Nation, The News</td>
                                     <td>229323+ 282572+ 321424</td>
                                     <td>37939+7755 +6652</td>
@@ -789,8 +750,8 @@ https://drive.google.com/drive/folders/1zHpBAl80LFWsmWBV3MrwACkOcFpJLgUe?usp=sha
                                 </tr>
 
                                 <tr>
-                                    <td colSpan={2}><a href="https://drive.google.com/drive/folders/1frMqQyJmQpieyGo6hYD7TdL13TL9Qikv?usp=sharing">
-                                        Transgender</a></td>
+                                    <td colSpan={2}>
+                                        Transgender</td>
                                     <td>The Express Tribune</td>
                                     <td>15337</td>
                                     <td>18131</td>
@@ -798,7 +759,7 @@ https://drive.google.com/drive/folders/1zHpBAl80LFWsmWBV3MrwACkOcFpJLgUe?usp=sha
                                 </tr>
 
                                 <tr>
-                                    <td colSpan={2}><a href="https://drive.google.com/drive/folders/1RsL-n3kVF42HuIA6yiwOIJXQZtUOWLVS?usp=sharing">Aurat March</a></td>
+                                    <td colSpan={2}>Aurat March</td>
                                     <td>Dailytimes, Dunya News</td>
                                     <td>10908+6468+594+ 1887+1959</td>
                                     <td>9153+2715+ 5541+897</td>
@@ -806,7 +767,7 @@ https://drive.google.com/drive/folders/1zHpBAl80LFWsmWBV3MrwACkOcFpJLgUe?usp=sha
                                 </tr>
 
                                 <tr>
-                                    <td colSpan={2}><a href="https://drive.google.com/drive/folders/1RVhjvZ_VZA97rN2xmuYjxMkzOiGwpkhW?usp=sharing">Health Care</a></td>
+                                    <td colSpan={2}>Health Care</td>
                                     <td>The Nation, Dunya News, Tribune Blogs</td>
                                     <td>4820+1099+873+ 16032+</td>
                                     <td>3636+1264+ 10124+</td>
@@ -814,7 +775,7 @@ https://drive.google.com/drive/folders/1zHpBAl80LFWsmWBV3MrwACkOcFpJLgUe?usp=sha
                                 </tr>
 
                                 <tr>
-                                    <td colSpan={2}><a href="https://drive.google.com/drive/folders/1AThdHlXXEySWQ89qMdHebbxw90XaBj7C?usp=sharing">COVID-19</a></td>
+                                    <td colSpan={2}>COVID-19</td>
                                     <td>Dailytimes, Dunya News, Tribune Blogs, </td>
                                     <td>30207+7321+5652+ 14768+2466</td>
                                     <td>19336+5502+ 5791+6127+ 2416</td>
@@ -822,7 +783,7 @@ https://drive.google.com/drive/folders/1zHpBAl80LFWsmWBV3MrwACkOcFpJLgUe?usp=sha
                                 </tr>
 
                                 <tr>
-                                    <td colSpan={2}><a href="https://drive.google.com/drive/folders/1FHG-LjBYbrJudJJODjSrtEN2US0cnn3d?usp=sharing">Arts & Culture</a></td>
+                                    <td colSpan={2}>Arts & Culture</td>
                                     <td>DAWN</td>
                                     <td>20965</td>
                                     <td>45991</td>
@@ -938,7 +899,7 @@ https://drive.google.com/drive/folders/1zHpBAl80LFWsmWBV3MrwACkOcFpJLgUe?usp=sha
                                 </tr>
 
                                 <tr>
-                                    <td colSpan={2}><a href="https://drive.google.com/drive/folders/1Fur3VQvD51bF2zc9V-E04WDXsxwrEokF?usp=sharing">Synopsis Defense Presentations</a></td>
+                                    <td colSpan={2}>Synopsis Defense Presentations</td>
                                     <td>Arts and humanities</td>
                                     <td>13419</td>
                                     <td>14274</td>
@@ -952,7 +913,7 @@ https://drive.google.com/drive/folders/1zHpBAl80LFWsmWBV3MrwACkOcFpJLgUe?usp=sha
                                 </tr>
 
                                 <tr>
-                                    <td colSpan={2}><a href="https://drive.google.com/drive/folders/1VW67ng9oOhOdjZ7cq2wTaA0yiomrTjJW?usp=sharing">Classroom Lectures</a></td>
+                                    <td colSpan={2}>Classroom Lectures</td>
                                     <td>Arts and Humanities</td>
                                     <td>33714+62141</td>
                                     <td>17376+83289</td>
@@ -966,7 +927,7 @@ https://drive.google.com/drive/folders/1zHpBAl80LFWsmWBV3MrwACkOcFpJLgUe?usp=sha
                                 </tr>
 
                                 <tr>
-                                    <td colSpan={2}><a href="https://drive.google.com/drive/folders/1ja2y4AeclgfqNgh_TH15YRO1wyLah9L1?usp=sharing">Conference Presentations</a></td>
+                                    <td colSpan={2}>Conference Presentations</td>
                                     <td></td>
                                     <td>18897</td>
                                     <td>15199</td>
@@ -981,9 +942,9 @@ https://drive.google.com/drive/folders/1zHpBAl80LFWsmWBV3MrwACkOcFpJLgUe?usp=sha
 
                                 <tr>
                                     <td colSpan={2}>
-                                        <a href="https://drive.google.com/drive/folders/1MJKiKno5dfxr-RZZjaEn6IB0EXjuBiev?usp=sharing">
+
                                             Motivational Speeches
-                                        </a>
+
                                     </td>
                                     <td></td>
                                     <td>37976</td>

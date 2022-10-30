@@ -78,13 +78,14 @@ export default function Contact() {
                   <i className="fa fa-map-marker fa-2x" />
                   <p>Islamabad</p>
                 </li>
-                <li>
+                {/* <li>
                   <i className="fa fa-phone fa-lg mt-4 fa-2x" />
                   <p>(+92) 3084432015</p>
-                </li>
+                </li> */}
                 <li>
                   <i className="fa fa-envelope fa-lg mt-4 fa-2x" />
-                  <p>pakgentex@gmail.com</p>
+                  <p>pakgentext@gmail.com</p>
+                  <p>tehseen.zahra@mail.au.edu.pk</p>
                 </li>
               </ul>
             </div>

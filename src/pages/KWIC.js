@@ -11,7 +11,18 @@ import { useReactToPrint } from 'react-to-print';
 import { ColorRing } from 'react-loader-spinner'
 var _ = require('lodash');
 // import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
-
+const splitText = (str,word)=>{
+    let startIndex = str.split(' ').indexOf(word)
+    let arr = str.split(' ')
+    if(startIndex>250){
+        let str = arr.slice(startIndex-250,startIndex+250).join(' ')
+        return str
+    }
+    else{
+        let str = arr.slice(startIndex,startIndex+500).join(' ')
+        return str
+    }
+}
 const halfString = (str) => {
     if (str.length % 2 == 0) {
         return str.slice(0, str.length / 2);
@@ -205,8 +216,8 @@ export default function Concordance() {
                             <br />
                             <div className="pt-3 border border-2 p-2 border-danger pb-3">
                                 <br />
-                                {showLoader === false &&showText===false && <div style={{ display: "flex", justifyContent: 'space-between' }}>
-                                    <p style={{fontWeight:'bold',color:'red'}}>Click on highlighted text to view context</p>
+                                {showLoader === false && showText === false && <div style={{ display: "flex", justifyContent: 'space-between' }}>
+                                    <p style={{ fontWeight: 'bold', color: 'red' }}>Click on highlighted text to view context</p>
                                     <button className='p-1 px-5 rounded border text-white' style={{ backgroundColor: "darkblue", width: 200 }} onClick={() => {
                                         handlePrint()
                                     }}>Print Results</button>
@@ -253,7 +264,7 @@ export default function Concordance() {
                                                             })
                                                     }} href=''>{item.filename.split('/')[item.filename.split('/').length - 1]}</a></td> */}
                                                     <td className='text-center'>{item.preText}</td>
-                                                    <td className='text-danger text-center' ><strong style={{textDecoration:'underline'}} onClick={e => {
+                                                    <td className='text-danger text-center' ><strong style={{textDecoration:'underline',cursor:'pointer'}} onClick={e => {
                                                         e.preventDefault()
                                                         setshowLoader(true)
                                                         // console.log('item---->', item.filename)
@@ -290,9 +301,9 @@ export default function Concordance() {
                                                 setfilepath('')
                                                 setshowText(false)
                                             }} style={{ color: 'blue', textDecoration: 'underline', paddingLeft: "10" }}>Go Back {"     "} </span>
-                                            <p style={{ textAlign: "center", fontWeight: 'bolder', fontSize: 18 }}>{filepath}</p>
+                                            {/* <p style={{ textAlign: "center", fontWeight: 'bolder', fontSize: 18 }}>{filepath}</p> */}
                                             {/* <p style={{ padding: 20, textAlign: 'justify' }}>{fileText}</p> */}
-                                            <Highlighted text={fileText.split(' ').length>500?fileText.split(' ').slice(0,1000).join(' '):halfString(fileText)} highlight={WordSave} />
+                                            ...<Highlighted text={fileText.split(' ').length > 500 ? splitText(fileText,WordSave) : fileText} highlight={WordSave} />
                                         </div>}
                                     {showLoader === true && <ColorRing
                                         visible={showLoader}

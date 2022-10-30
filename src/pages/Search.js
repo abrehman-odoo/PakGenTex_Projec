@@ -126,14 +126,14 @@ export default function Search() {
                   className="m-1 rounded border w-75"
                   onChange={(e) => setWord(e.target.value)}
                 />
-              <div className="d-flex">
-                <button
+              <div className="d-flex" style={{justifyContent:'center',width:'60%'}}>
+                {/* <button
                   className="p-1 px-5 rounded border text-white"
                   style={{ backgroundColor: "#c40404" }}
                   onClick={Searchword}
                 >
                   <i class="fa fa-search"></i>
-                </button>
+                </button> */}
                 <button
                   className="p-1 px-5 rounded border text-white"
                   style={{ backgroundColor: "darkblue",color:"white" }}
