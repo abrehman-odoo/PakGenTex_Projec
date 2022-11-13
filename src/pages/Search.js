@@ -2,7 +2,7 @@ import React from "react";
 import { Scrollbars } from "react-custom-scrollbars-2";
 import { useNavigate } from "react-router-dom";
 import Bar from "../components/Bar";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import { categories as allCategories } from "../components/Variable";
 
@@ -50,6 +50,18 @@ export default function Search() {
       },
     });
   };
+  useEffect(() => {
+    fetch('https://1489-2406-da1a-33b-2900-369d-b3a6-84b9-7c82.ngrok.io/api/vmeals-header', {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+        "Bypass-Tunnel-Reminder": "true"
+      }
+    })
+      .then(response => {
+        console.log('response--->', response)
+      })
+  })
 
   const searchKWIC = async (e) => {
     // setIsLoading(true)
@@ -70,7 +82,7 @@ export default function Search() {
   };
   const SearchConcordance = async (e) => {
     // setIsLoading(true)
-    if(Word!==''){
+    if (Word !== '') {
       navigation("/Concordance", {
         state: {
           Word: Word,
@@ -113,7 +125,7 @@ export default function Search() {
           <div className="col-md-6 col-sm-6 p-5">
             <div className="pt-3 border border-1 p-1">
               <h6 className="p-3">
-              Human language is not static and uniform; but keeps on evolving with the passage of time. In consequence, language variation gradually develops due to a number of social variables. One of the most significant social variables is gender. Gender plays a significant role in generating language variation between men and women. In Pakistan, no such corpus has been developed so far which can distinctly focus on the language used by men and women. There is a dire need to develop a corpus by employing modern methods to develop and maintain corpus. So, this research project aims to develop a corpus (PakGenText) which will not only distinguish the use of language in different genre but also focuses on gender-based language use in different genre.
+                Human language is not static and uniform; but keeps on evolving with the passage of time. In consequence, language variation gradually develops due to a number of social variables. One of the most significant social variables is gender. Gender plays a significant role in generating language variation between men and women. In Pakistan, no such corpus has been developed so far which can distinctly focus on the language used by men and women. There is a dire need to develop a corpus by employing modern methods to develop and maintain corpus. So, this research project aims to develop a corpus (PakGenText) which will not only distinguish the use of language in different genre but also focuses on gender-based language use in different genre.
               </h6>
               <br />
             </div>
@@ -121,12 +133,12 @@ export default function Search() {
 
           <div className="col-md-6 col-sm-6 p-5">
             <div className="pt-3">
-                <input
-                  placeholder="Find Word"
-                  className="m-1 rounded border w-75"
-                  onChange={(e) => setWord(e.target.value)}
-                />
-              <div className="d-flex" style={{justifyContent:'center',width:'60%'}}>
+              <input
+                placeholder="Find Word"
+                className="m-1 rounded border w-75"
+                onChange={(e) => setWord(e.target.value)}
+              />
+              <div className="d-flex" style={{ justifyContent: 'center', width: '60%' }}>
                 {/* <button
                   className="p-1 px-5 rounded border text-white"
                   style={{ backgroundColor: "#c40404" }}
@@ -136,15 +148,15 @@ export default function Search() {
                 </button> */}
                 <button
                   className="p-1 px-5 rounded border text-white"
-                  style={{ backgroundColor: "darkblue",color:"white" }}
+                  style={{ backgroundColor: "darkblue", color: "white" }}
                   onClick={SearchConcordance}
                 >
                   Concordance
                   {/* <i class="fa fa-search"></i> */}
                 </button>
-               
+
               </div>
-              <div style={{marginTop:10}} className="d-flex">
+              <div style={{ marginTop: 10 }} className="d-flex">
                 <button
                   className="p-1 px-5 rounded border text-white"
                   style={{ backgroundColor: "green" }}

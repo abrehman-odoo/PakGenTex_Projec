@@ -6,10 +6,10 @@ const headers ={
 
 const categories = [
     {
-        name:"Written",
+        name:"Written Discourse",
         subcategories:[
             {
-                name:"Academic",
+                name:"Academic Discourse",
                 subcategories:[
                     {
                         name:"PHD Theses",
@@ -31,14 +31,14 @@ const categories = [
                         subcategories:[]
                     },
                     {
-                        name:"Pakistani Textbooks",
+                        name:"Textbooks",
                         subcategories:[]
                     }
 
                 ]
             },
             {
-                name:"Arts & Literature",
+                name:"Literary Discourse",
                 subcategories:[
                     {
                         name:"Autobiographies",
@@ -66,7 +66,7 @@ const categories = [
                 ]
             },
             {
-                name:"Media",
+                name:"Media Discourse",
                 subcategories:[
                     {
                         name:"Book reviews",
@@ -88,6 +88,10 @@ const categories = [
                         subcategories:[]
                     },
                     {
+                        name:"Editorials",
+                        subcategories:[]
+                    },
+                    {
                         name:"Newspaper Blogs",
                         subcategories:[]
                     }
@@ -96,7 +100,7 @@ const categories = [
         ]
     },
     {
-        name:"Spoken",
+        name:"Spoken Discourse",
         subcategories:[
             {
                 name:"MPHIl Synopsis defence presentations",
