@@ -1,5 +1,5 @@
 const url = 'https://e728-185-202-239-227.ngrok.io'
-const headers ={
+const headers = {
     'Content-Type': 'application/json',
     'Accept': 'application/json',
 }
@@ -12,27 +12,16 @@ const categories = [
                 name:"Academic Discourse",
                 subcategories:[
                     {
-                        name:"PHD Theses",
-                        subcategories:[
-                            {
-                                name:"Male"
-                            },
-                            {
-                                name:"Female"
-                            }
-                        ]
+                        name:"PHD Theses"  
                     },
                     {
-                        name:"MPHIl reserch proposal",
-                        subcategories:[]
+                        name:"MPHIl Synopsis"
                     },
                     {
-                        name:"Research Articles",
-                        subcategories:[]
+                        name:"Research Articles"
                     },
                     {
-                        name:"Textbooks",
-                        subcategories:[]
+                        name:"Textbooks"
                     }
 
                 ]
@@ -41,27 +30,16 @@ const categories = [
                 name:"Literary Discourse",
                 subcategories:[
                     {
-                        name:"Autobiographies",
-                        subcategories:[
-                            {
-                                name:"Male"
-                            },
-                            {
-                                name:"Female"
-                            }
-                        ]
+                        name: "Autobiographies"
                     },
                     {
-                        name:"Novels",
-                        subcategories:[]
+                        name: "Novels"
                     },
                     {
-                        name:"Short stories",
-                        subcategories:[]
+                        name: "Short stories"
                     },
                     {
-                        name:"Translated Short Stories",
-                        subcategories:[]
+                        name: "Translated Short Stories"
                     }
                 ]
             },
@@ -69,31 +47,19 @@ const categories = [
                 name:"Media Discourse",
                 subcategories:[
                     {
-                        name:"Book reviews",
-                        subcategories:[
-                            {
-                                name:"Male"
-                            },
-                            {
-                                name:"Female"
-                            }
-                        ]
+                        name:"Book reviews"
                     },
                     {
-                        name:"Newspaper Articles",
-                        subcategories:[]
+                        name:"Newspaper Articles"
                     },
                     {
-                        name:"Magazine Articles",
-                        subcategories:[]
+                        name:"Magazine Articles"
                     },
                     {
-                        name:"Editorials",
-                        subcategories:[]
+                        name:"Editorials"
                     },
                     {
-                        name:"Newspaper Blogs",
-                        subcategories:[]
+                        name:"Newspaper Blogs"
                     }
                 ]
             },
@@ -103,35 +69,27 @@ const categories = [
         name:"Spoken Discourse",
         subcategories:[
             {
-                name:"MPHIl Synopsis defence presentations",
+                name:"Academic Discourse",
                 subcategories:[
                     {
-                        name:"Male"
+                        name:"MPHIl Synopsis Presentation"
                     },
                     {
-                        name:"Female"
+                        name:"Classroom lectures",
+                    },
+                    {
+                        name: "Conference Presentations"
                     }
                 ]
             },
             {
-                name:"Classroom lectures",
+                name:"Media Discourse",
                 subcategories:[
                     {
-                        name:"Male"
-                    },
-                    {
-                        name:"Female"
+                        name:"Motivational speech"
                     }
                 ]
             },
-            {
-                name:"Conference presentations",
-                subcategories:[]
-            },
-            {
-                name:"Motivational speech",
-                subcategories:[]
-            }
         ]
     },
 ]

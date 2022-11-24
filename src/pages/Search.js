@@ -1,11 +1,109 @@
-import React from "react";
+import React,{Fragment} from "react";
 import { Scrollbars } from "react-custom-scrollbars-2";
 import { useNavigate } from "react-router-dom";
 import Bar from "../components/Bar";
 import { useState, useEffect } from "react";
-
+import {response as dataa} from './RTF'
 import { categories as allCategories } from "../components/Variable";
+import escapeHTML from 'escape-html';
+import { Text } from 'slate';
+const serialize = (children) => children.map((node, i) => {
+  if (Text.isText(node)) {
+    let text = <span dangerouslySetInnerHTML={{ __html: escapeHTML(node.text) }} />;
 
+    if (node.bold) {
+      text = (
+        <strong key={i}>
+          {text}
+        </strong>
+      );
+    }
+
+    if (node.code) {
+      text = (
+        <code key={i}>
+          {text}
+        </code>
+      );
+    }
+
+    if (node.italic) {
+      text = (
+        <em key={i}>
+          {text}
+        </em>
+      );
+    }
+
+    // Handle other leaf types here...
+
+    return (
+      <Fragment key={i}>
+        {text}
+      </Fragment>
+    );
+  }
+
+  if (!node) {
+    return null;
+  }
+
+  switch (node.type) {
+    case 'h1':
+      return (
+        <h1 key={i}>
+          {serialize(node.children)}
+        </h1>
+      );
+    // Iterate through all headings here...
+    case 'h6':
+      return (
+        <h6 key={i}>
+          {serialize(node.children)}
+        </h6>
+      );
+    case 'quote':
+      return (
+        <blockquote key={i}>
+          {serialize(node.children)}
+        </blockquote>
+      );
+    case 'ul':
+      return (
+        <ul key={i}>
+          {serialize(node.children)}
+        </ul>
+      );
+    case 'ol':
+      return (
+        <ol key={i}>
+          {serialize(node.children)}
+        </ol>
+      );
+    case 'li':
+      return (
+        <li key={i}>
+          {serialize(node.children)}
+        </li>
+      );
+    case 'link':
+      return (
+        <a
+          href={escapeHTML(node.url)}
+          key={i}
+        >
+          {serialize(node.children)}
+        </a>
+      );
+
+    default:
+      return (
+        <p key={i}>
+          {serialize(node.children)}
+        </p>
+      );
+  }
+});
 export default function Search() {
   const [Word, setWord] = useState("");
   const [selectedCategoryIndex, setselectedCategoryIndex] = useState(-1);
@@ -125,6 +223,7 @@ export default function Search() {
           <div className="col-md-6 col-sm-6 p-5">
             <div className="pt-3 border border-1 p-1">
               <h6 className="p-3">
+                {/* {serialize(dataa.docs[0].VMealsClassicDietdescriptionParagraphs)} */}
                 Human language is not static and uniform; but keeps on evolving with the passage of time. In consequence, language variation gradually develops due to a number of social variables. One of the most significant social variables is gender. Gender plays a significant role in generating language variation between men and women. In Pakistan, no such corpus has been developed so far which can distinctly focus on the language used by men and women. There is a dire need to develop a corpus by employing modern methods to develop and maintain corpus. So, this research project aims to develop a corpus (PakGenText) which will not only distinguish the use of language in different genre but also focuses on gender-based language use in different genre.
               </h6>
               <br />
