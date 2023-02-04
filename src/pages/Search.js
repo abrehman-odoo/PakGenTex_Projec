@@ -148,18 +148,18 @@ export default function Search() {
       },
     });
   };
-  useEffect(() => {
-    fetch('https://1489-2406-da1a-33b-2900-369d-b3a6-84b9-7c82.ngrok.io/api/vmeals-header', {
-      method: "GET",
-      headers: {
-        "Content-Type": "application/json",
-        "Bypass-Tunnel-Reminder": "true"
-      }
-    })
-      .then(response => {
-        console.log('response--->', response)
-      })
-  })
+  // useEffect(() => {
+  //   fetch('https://1489-2406-da1a-33b-2900-369d-b3a6/api/vmeals-header', {
+  //     method: "GET",
+  //     headers: {
+  //       "Content-Type": "application/json",
+  //       "Bypass-Tunnel-Reminder": "true"
+  //     }
+  //   })
+  //     .then(response => {
+  //       console.log('response--->', response)
+  //     })
+  // })
 
   const searchKWIC = async (e) => {
     // setIsLoading(true)

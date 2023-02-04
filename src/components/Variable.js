@@ -1,4 +1,4 @@
-const url = 'https://e728-185-202-239-227.ngrok.io'
+const url = 'https://api.pakgentext.com'
 const headers = {
     'Content-Type': 'application/json',
     'Accept': 'application/json',
@@ -12,16 +12,48 @@ const categories = [
                 name:"Academic Discourse",
                 subcategories:[
                     {
-                        name:"PHD Theses"  
+                        name:"PHD Theses",
+                        subcategories:[
+                            {
+                                name:"MALE"
+                            },
+                            {
+                                name:"FEMALE"
+                            }
+                        ]  
                     },
                     {
-                        name:"MPHIl Synopsis"
+                        name:"MS Research Proposal Corpus",
+                        subcategories:[
+                            {
+                                name:"Male"
+                            },
+                            {
+                                name:"Female"
+                            }
+                        ]  
                     },
                     {
-                        name:"Research Articles"
+                        name:"Research Articles",
+                        subcategories:[
+                            {
+                                name:"Male"
+                            },
+                            {
+                                name:"Female"
+                            }
+                        ]
                     },
                     {
-                        name:"Textbooks"
+                        name:"Pakistani Textbooks",
+                        subcategories:[
+                            {
+                                name:"Male"
+                            },
+                            {
+                                name:"Female"
+                            }
+                        ]
                     }
 
                 ]
@@ -30,16 +62,48 @@ const categories = [
                 name:"Literary Discourse",
                 subcategories:[
                     {
-                        name: "Autobiographies"
+                        name: "Autobiographies",
+                        subcategories:[
+                            {
+                                name:"Male"
+                            },
+                            {
+                                name:"Female"
+                            }
+                        ]
                     },
                     {
-                        name: "Novels"
+                        name: "Novels",
+                        subcategories:[
+                            {
+                                name:"Male"
+                            },
+                            {
+                                name:"Female"
+                            }
+                        ]
                     },
                     {
-                        name: "Short stories"
+                        name: "Short stories",
+                        subcategories:[
+                            {
+                                name:"Male"
+                            },
+                            {
+                                name:"Female"
+                            }
+                        ]
                     },
                     {
-                        name: "Translated Short Stories"
+                        name: "Translated Short Stories",
+                        subcategories:[
+                            {
+                                name:"Male"
+                            },
+                            {
+                                name:"Female"
+                            }
+                        ]
                     }
                 ]
             },
@@ -47,19 +111,59 @@ const categories = [
                 name:"Media Discourse",
                 subcategories:[
                     {
-                        name:"Book reviews"
+                        name:"Book reviews",
+                        subcategories:[
+                            {
+                                name:"Male"
+                            },
+                            {
+                                name:"Female"
+                            }
+                        ]
                     },
                     {
-                        name:"Newspaper Articles"
+                        name:"Newspaper Articles",
+                        subcategories:[
+                            {
+                                name:"Male"
+                            },
+                            {
+                                name:"Female"
+                            }
+                        ]
                     },
                     {
-                        name:"Magazine Articles"
+                        name:"Magazine Articles",
+                        subcategories:[
+                            {
+                                name:"Male"
+                            },
+                            {
+                                name:"Female"
+                            }
+                        ]
                     },
                     {
-                        name:"Editorials"
+                        name:"Editorials",
+                        subcategories:[
+                            {
+                                name:"Male"
+                            },
+                            {
+                                name:"Female"
+                            }
+                        ]
                     },
                     {
-                        name:"Newspaper Blogs"
+                        name:"Newspaper Blogs",
+                        subcategories:[
+                            {
+                                name:"Male"
+                            },
+                            {
+                                name:"Female"
+                            }
+                        ]
                     }
                 ]
             },
@@ -72,13 +176,37 @@ const categories = [
                 name:"Academic Discourse",
                 subcategories:[
                     {
-                        name:"MPHIl Synopsis Presentation"
+                        name:"MPHIl Synopsis Presentation",
+                        subcategories:[
+                            {
+                                name:"Male"
+                            },
+                            {
+                                name:"Female"
+                            }
+                        ]
                     },
                     {
                         name:"Classroom lectures",
+                        subcategories:[
+                            {
+                                name:"Male"
+                            },
+                            {
+                                name:"Female"
+                            }
+                        ]
                     },
                     {
-                        name: "Conference Presentations"
+                        name: "Conference Presentations",
+                        subcategories:[
+                            {
+                                name:"Male"
+                            },
+                            {
+                                name:"Female"
+                            }
+                        ]
                     }
                 ]
             },
@@ -86,7 +214,15 @@ const categories = [
                 name:"Media Discourse",
                 subcategories:[
                     {
-                        name:"Motivational speech"
+                        name:"Motivational speech",
+                        subcategories:[
+                            {
+                                name:"Male"
+                            },
+                            {
+                                name:"Female"
+                            }
+                        ]
                     }
                 ]
             },
